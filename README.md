@@ -1,0 +1,3 @@
+# DiscordTRPGSpoofer
+
+DiscordのアクティビティステータスにTRPGをプレイ中として表示します
