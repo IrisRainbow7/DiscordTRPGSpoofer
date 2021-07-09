@@ -5,22 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscordTRPGSpoofer"
         mc:Ignorable="d"
-        Title="DiscordTRPGSpoofer" Height="290" Width="500" ResizeMode="CanMinimize" SizeToContent="Height">
-	<StackPanel Margin="0,0,0,-6">
-		<Label Content="TRPGシステムを選択してください" Width="466" FontSize="36"/>
-		<ComboBox x:Name="TRPGSystemName" Width="442" Margin="0,10,0,0">
-			<ComboBoxItem Content="クトゥルフ神話TRPG"/>
-			<ComboBoxItem Content="アリアンロッドRPG 2E"/>
-		</ComboBox>
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
-			<Label Content="追加情報1：" FontSize="16" Width="102" />
-			<TextBox x:Name="Detail" TextWrapping="Wrap" Width="338" FontSize="16" Text="シナリオ："/>
-		</StackPanel>
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-			<Label Content="追加情報2：" FontSize="16" Width="102" />
-			<TextBox x:Name="State" TextWrapping="Wrap" Width="338" FontSize="16"/>
-		</StackPanel>
-		<Button Content="反映" Height="50" Width="161" FontSize="18" Margin="0,20,0,20" Click="Button_Click"/>
+        Title="DiscordTRPGSpoofer" Height="327" Width="500" ResizeMode="CanMinimize" SizeToContent="Height">
+    <StackPanel Margin="0,-4,0,-6">
+        <Label Content="TRPGシステムを選択してください" Width="466" FontSize="36"/>
+        <ComboBox x:Name="TRPGSystemName" Width="442" Margin="0,10,0,0">
+            <ComboBoxItem Content="クトゥルフ神話TRPG"/>
+            <ComboBoxItem Content="アリアンロッドRPG 2E"/>
+        </ComboBox>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+            <Label Content="追加情報1：" FontSize="16" Width="102" />
+            <TextBox x:Name="Detail" TextWrapping="Wrap" Width="338" FontSize="16" Text="シナリオ："/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Label Content="追加情報2：" FontSize="16" Width="102" />
+            <TextBox x:Name="State" TextWrapping="Wrap" Width="338" FontSize="16"/>
+        </StackPanel>
+        <CheckBox x:Name="isEnableTime" Content="経過時間を表示する" FontSize="16" Margin="0,15,0,0" Width="416" IsChecked="True"/>
+        <Button Content="反映" Height="50" Width="161" FontSize="18" Margin="0,15,0,20" Click="Button_Click"/>
 
-	</StackPanel>
+    </StackPanel>
 </Window>

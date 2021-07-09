@@ -61,7 +61,6 @@ namespace DiscordTRPGSpoofer
 
             if (first)
             {
-                Debug.Print("first");
                 first = false;
                 ts = Timestamps.Now;
             }
@@ -75,8 +74,11 @@ namespace DiscordTRPGSpoofer
                     LargeImageText = ImageTexts[TRPGSystemName.SelectedIndex]
 
                 },
-                Timestamps = ts
             };
+            if ((bool)isEnableTime.IsChecked)
+            {
+                rp.Timestamps = ts;
+            }
 
             client.SetPresence(rp);
         }
