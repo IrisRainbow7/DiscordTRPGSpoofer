@@ -4,7 +4,7 @@ DiscordのアクティビティステータスにTRPGをプレイ中として表
 
 PC版Discordと一緒に起動してください
 
-ダウンロードは[こちら](https://github.com/IrisRainbow7/DiscordTRPGSpoofer/releases/download/1.0/DiscordTRPGSpoofer.zip)
+ダウンロードは[こちら](https://github.com/IrisRainbow7/DiscordTRPGSpoofer/releases/download/1.1/DiscordTRPGSpoofer.zip)
 
 zipファイルを解凍し、`DiscordTRPGSpoofer.exe`を実行してください
 
