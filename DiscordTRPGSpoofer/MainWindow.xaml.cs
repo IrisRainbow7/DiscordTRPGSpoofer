@@ -52,6 +52,7 @@ namespace DiscordTRPGSpoofer
             if (string.IsNullOrEmpty(currentClientID))
             {
                 InitializeDiscord(clientIDs[TRPGSystemName.SelectedIndex]);
+                currentClientID = clientIDs[TRPGSystemName.SelectedIndex];
             } else if (currentClientID != clientIDs[TRPGSystemName.SelectedIndex])
             {
                 client.Dispose();
