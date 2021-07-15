@@ -10,8 +10,8 @@ namespace DiscordTRPGSpoofer
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly string[] clientIDs = new string[] { "862331543418699827", "862386382558986260" };
-        private readonly string[] ImageTexts = new string[] { "いあ！いあ！", "エリンディル" };
+        private readonly string[] clientIDs = new string[] { "862331543418699827", "862386382558986260", "865166411110154301" };
+        private readonly string[] ImageTexts = new string[] { "いあ！いあ！", "エリンディル", "" };
         private string currentClientID = "";
         private DiscordRpcClient client;
         private bool first = true;
@@ -25,6 +25,7 @@ namespace DiscordTRPGSpoofer
 
         private void InitializeDiscord(string clientID)
         {
+            currentClientID = clientID;
             client = new DiscordRpcClient(clientID);
             client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
 
@@ -52,7 +53,6 @@ namespace DiscordTRPGSpoofer
             if (string.IsNullOrEmpty(currentClientID))
             {
                 InitializeDiscord(clientIDs[TRPGSystemName.SelectedIndex]);
-                currentClientID = clientIDs[TRPGSystemName.SelectedIndex];
             } else if (currentClientID != clientIDs[TRPGSystemName.SelectedIndex])
             {
                 client.Dispose();
