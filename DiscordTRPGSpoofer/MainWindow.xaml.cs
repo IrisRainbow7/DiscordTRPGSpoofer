@@ -10,8 +10,8 @@ namespace DiscordTRPGSpoofer
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly string[] clientIDs = new string[] { "862331543418699827", "862386382558986260", "865166411110154301" };
-        private readonly string[] ImageTexts = new string[] { "いあ！いあ！", "エリンディル", "" };
+        private readonly string[] clientIDs = new string[] { "862331543418699827", "862386382558986260", "865166411110154301", "874389940249714761" };
+        private readonly string[] ImageTexts = new string[] { "いあ！いあ！", "エリンディル", "", "" };
         private string currentClientID = "";
         private DiscordRpcClient client;
         private bool first = true;
