@@ -10,8 +10,9 @@
         <Label Content="TRPGシステムを選択してください" Width="466" FontSize="36"/>
         <ComboBox x:Name="TRPGSystemName" Width="442" Margin="0,10,0,0">
             <ComboBoxItem Content="クトゥルフ神話TRPG"/>
-            <ComboBoxItem Content="アリアンロッドRPG 2E"/>
             <ComboBoxItem Content="マーダーミステリー"/>
+            <ComboBoxItem Content="エモクロアTRPG"/>
+            <ComboBoxItem Content="アリアンロッドRPG 2E"/>
             <ComboBoxItem Content="ボードゲームアリーナ"/>
         </ComboBox>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
